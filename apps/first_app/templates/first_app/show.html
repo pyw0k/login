@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Landing Page!</title>
+</head>
+<body>
+	{% if messages %}
+    <div class='messages'>
+        {% for message in messages %}
+        <p>{{ message }}</p>
+        {% endfor %}
+    </div>
+    {% endif %}
+<a href="/logout">Logout</a>
+<h1>Welcome, {{user.name}}</h1>
+</body>
+</html>
